@@ -7,14 +7,16 @@ const btClose = document.getElementById('btContinuar-close');
 const modal = document.querySelector('.modal');
 const container = document.querySelector('.modal-container');
 
-btClose.addEventListener("click", cerrarModal);
-
-function cerrarModal(){
+btClose.addEventListener("click", function(){
     modal.classList.add("modal-close");
-    container.style.opacity = "0";
-    container.style.visibility = "visible";
-}
+    setTimeout(function(){
+        container.style.opacity = "0";
+        container.style.visibility = "visible";
+    },500)
+})
 
+    
+    
 
 
 let chose = 1
