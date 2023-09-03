@@ -3,6 +3,19 @@ const option2 = document.getElementById('option2');
 const content1 = document.getElementById('content1');
 const content2 = document.getElementById('content2');
 const btContinuar = document.getElementById("btContinuar");
+const btClose = document.getElementById('btContinuar-close');
+const modal = document.querySelector('.modal');
+const container = document.querySelector('.modal-container');
+
+btClose.addEventListener("click", cerrarModal);
+
+function cerrarModal(){
+    modal.classList.add("modal-close");
+    container.style.opacity = "0";
+    container.style.visibility = "visible";
+}
+
+
 
 let chose = 1
 
@@ -35,9 +48,11 @@ option1.addEventListener('click', ()=> {
 option2.addEventListener('click', ()=> {
     chose = 2
     changeOption()
+    content2.classList.add("content-Two");
 })
 
 btContinuar.addEventListener('click', ()=>{
     chose = 2
     changeOption()
+    content2.classList.add("content-Two");
 })

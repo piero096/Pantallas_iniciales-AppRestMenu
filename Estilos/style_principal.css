@@ -15,24 +15,52 @@
     font-family: 'Arvo', serif;
 }
 
-body {
-    background: var(--white);
+body {   
     min-height: 100vh;
-    
+
 }
+
+/* ------------ modal ----------------------------- */
+
+.modal-container{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.modal{
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    overflow: hidden;
+    transition: transform 1s;
+    transform: translateY(0%);
+}
+
+.modal-close{
+
+    transform: translateY(-200%);
+}
+/* ------------ fin modal ----------------------------- */
+
 
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--white);
+    opacity: 1;
+    visibility: visible;
+    background: rgba(0, 0, 0, 0.8);
     min-height: 100vh;
 }
 
 .tab-container {
    width: 600px;
    height: 400px;
-   
    box-shadow: 3px 5px 10px rgba(0, 0, 0, .8);
    border-radius: 5px;
    overflow: hidden;
@@ -78,6 +106,10 @@ body {
     position: relative;
 }
 
+.content-Two{
+    position: relative;
+}
+
 .content-active {
     background: var(--bg-active);
     display: block;
@@ -111,3 +143,19 @@ body {
 .content-One .boton-continuar:hover{
     background: var(--bg-button-hover);
 } 
+
+.content-Two .boton--guardar-close{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 110px;
+    height: 32px;
+    background: var(--bg-body);
+    color: var(--white);
+    border-radius: 8px;
+    border: none;
+}
+
+.content-Two .boton--guardar-close:hover{
+    background: var(--bg-button-hover);
+}
