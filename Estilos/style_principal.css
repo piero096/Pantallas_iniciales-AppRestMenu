@@ -1,0 +1,113 @@
+:root {
+    --bg-body: #006414;
+    --bg-cont: #003400;
+    --bg-active: #003400;
+    --bg-button: #043653;
+    --bg-button-hover: #015011;
+    --light-blue: #2998FF;
+    --white: #ffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+}
+
+body {
+    background: var(--white);
+    min-height: 100vh;
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    min-height: 100vh;
+}
+
+.tab-container {
+   width: 600px;
+   height: 400px;
+   
+   box-shadow: 3px 5px 10px rgba(0, 0, 0, .8);
+   border-radius: 5px;
+   overflow: hidden;
+
+}
+
+.options {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    list-style: none;
+}
+
+.option {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 60px;
+    border: solid 1px rgba(4, 51, 78, .6);
+    color: #fff;
+    background: var(--bg-body);
+    cursor: pointer;
+}
+
+.option-active {
+    background: var(--bg-active);
+    border-bottom: 1px solid rgba(7, 63 95,.4);
+}
+
+.contents {
+    width: 100%;
+    height: 85%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: none;
+    padding: 20px;
+}
+
+.content-One{
+    position: relative;
+}
+
+.content-active {
+    background: var(--bg-active);
+    display: block;
+}
+
+.content h3 {
+    text-align: center;
+    padding-bottom:  10px;
+    border-bottom: solid 1px rgba(255, 255, 255, .3);
+    letter-spacing: 2px;
+    margin: 10px;
+}
+
+.content p {
+    margin: 15px;
+    letter-spacing: 1px;
+}
+
+.content-One .boton-continuar{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 110px;
+    height: 32px;
+    background: var(--bg-body);
+    color: var(--white);
+    border-radius: 8px;
+    border: none;
+
+} 
+.content-One .boton-continuar:hover{
+    background: var(--bg-button-hover);
+} 

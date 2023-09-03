@@ -1,0 +1,232 @@
+:root{
+    --bg-body: #006414;
+    --bg-cont: #003400;
+    --bg-active: #003400;
+    --bg-button: #043653;
+    --bg-button-hover: #015011;
+    --light-blue: #2998FF;
+    --white: #ffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Arvo', serif;
+}
+/* ---------------------------------------- */
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.container .inactive{
+    display: none;
+}
+
+.container{
+    background-color: var(--white);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-bienvenido{
+    width: 500px;
+    height: 250px;
+    margin: 0 20px 0 20px;
+    padding: 10px 10px 10px 10px;
+    background: var(--bg-body);
+    border-radius: 2.0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    display: inline-block;
+    font-size: 4.0rem;
+    color: var(--white);
+}
+
+.parrafo{
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 2.0rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.parrafoTwo{
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 2.0rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.parrafoT{
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 2.0rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.btnContinuar{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 2.0rem;
+    border-radius: 2.0rem;
+    color: white;
+    background: var(--bg-button-hover);
+    border: none;
+}
+
+.btnContinuar:hover{
+    background: var(--bg-active);
+}
+
+/* --------------------------------------- */
+
+
+.parrafoThree{
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 2.0rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.parrafoFour{
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 2.0rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.parrafoFive{
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 2.0rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.btnCambiar{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 2.0rem;
+    border-radius: 2.0rem;
+    color: white;
+    background: var(--bg-button-hover);
+    border: none;
+}
+
+.btnCambiar:hover{
+    background: var(--bg-active);
+}
+
+/* ------------------------------------- */
+
+
+@media (max-width: 640px) {
+    .titulo{
+        display: inline-block;
+        font-size: 3.0rem;
+        color: var(--light-blue);
+    }
+    
+    .parrafo{
+        margin-top: 15px;
+        display: inline-block;
+        font-size: 1.5rem;
+        text-align: center;
+        color: var(--light-blue);
+    }
+    
+    .parrafoTwo{
+        margin-top: 15px;
+        display: inline-block;
+        font-size: 1.5rem;
+        text-align: center;
+        color: var(--light-blue);
+    }
+    
+    .parrafoT{
+        margin-top: 15px;
+        display: inline-block;
+        font-size: 1.5rem;
+        text-align: center;
+        color: var(--light-blue);
+    }
+    
+    .btnContinuar{
+        margin-top: 20px;
+        width: 200px;
+        height: 50px;
+        font-size: 1.5rem;
+        border-radius: 2.0rem;
+        color: white;
+        background: green;
+        border: none;
+    }
+    
+    .btnContinuar:hover{
+        background: rgb(1, 111, 1);
+    }
+    
+    /* --------------------------------------- */
+    
+    
+    .parrafoThree{
+        margin-top: 15px;
+        display: inline-block;
+        font-size: 1.5rem;
+        text-align: center;
+        color: var(--light-blue);
+    }
+    
+    .parrafoFour{
+        margin-top: 15px;
+        display: inline-block;
+        font-size: 1.5rem;
+        text-align: center;
+        color: var(--light-blue);
+    }
+    
+    .parrafoFive{
+        margin-top: 15px;
+        display: inline-block;
+        font-size: 1.5rem;
+        text-align: center;
+        color: var(--light-blue);
+    }
+    
+    .btnCambiar{
+        margin-top: 20px;
+        width: 150px;
+        height: 50px;
+        font-size: 1.5rem;
+        border-radius: 2.0rem;
+        color: white;
+        background: green;
+        border: none;
+    }
+    
+    .btnCambiar:hover{
+        background: rgb(1, 111, 1);
+    }
+  }
+  
