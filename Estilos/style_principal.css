@@ -159,3 +159,24 @@ body {
 .content-Two .boton--guardar-close:hover{
     background: var(--bg-button-hover);
 }
+
+.content-One .form-usuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+
+.content-Two .form-restaurante{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

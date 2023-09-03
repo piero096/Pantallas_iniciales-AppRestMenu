@@ -22,14 +22,53 @@
                     <div class="contents">
                         <div id="content1" class="content content-One content-active">
                             <h3>Datos de Usuario</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eius minima non praesentium nam eum voluptatum mollitia, blanditiis, commodi delectus repudiandae temporibus quia placeat ipsa.</p>
-                            <button class="boton-continuar" id="btContinuar">Continuar</button>
+                            <!-- se tienen que agregar diferentes inputs para Usuario
+                                Nombre
+                                Apellidos
+                                Dni
+                                Email
+                                -->
+                                <form action="" method="post" class="form-usuario">
+                                    <label for="nombre">Nombre</label>
+                                    <input id="nombre" type="text" name="nombre">
+
+                                    <label for="apellidos">Apellidos</label>
+                                    <input id="apellidos" type="text" name="apellidos">
+
+                                    <label for="dni">Dni</label>
+                                    <input id="dni" type="number" name="dni">
+
+                                    <label for="email">Email</label>
+                                    <input id="email" type="email" name="email">
+
+                                    <input class="boton-continuar" id="btContinuar" type="submit" value="Continuar">
+                                </form>
                         </div>
             
                         <div id="content2" class="content content-Two">
                             <h3>Datos de Restaurante</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate necessitatibus repellendus, quasi cum tenetur tempora veritatis veniam nemo aut similique modi est quidem facilis distinctio..</p>
-                            <button class="boton--guardar-close" id="btContinuar-close">Guardar y salir</button>
+                            <!-- se tienen que agregar diferentes inputs para Restaurante
+                                Nombre de restaurante
+                                Ruc
+                                Telefono
+                                Horario de atención
+                                -->
+                                <form action="" method="post" class="form-restaurante">
+                                    <label for="nombreRest">Nombre de Restaurante</label>
+                                    <input id="nombreRest" type="text" name="nombreRest">
+
+                                    <label for="ruc">Ruc</label>
+                                    <input id="ruc" type="number" name="ruc">
+
+                                    <label for="telefono">Telefono</label>
+                                    <input id="telefono" type="number" name="telefono">
+
+                                    <label for="horario">Horario de atención</label>
+                                    <input id="horario" type="text" name="horario">
+
+                                    <input class="boton--guardar-close" id="btContinuar-close" type="submit" value="Guardar y salir">
+                                </form>
+                            
                         </div>
                     </div>
                 </div>

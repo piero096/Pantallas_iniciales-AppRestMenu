@@ -8,16 +8,13 @@ const modal = document.querySelector('.modal');
 const container = document.querySelector('.modal-container');
 
 btClose.addEventListener("click", function(){
+    event.preventDefault();
     modal.classList.add("modal-close");
     setTimeout(function(){
         container.style.opacity = "0";
         container.style.visibility = "visible";
-    },500)
+    },600)
 })
-
-    
-    
-
 
 let chose = 1
 
@@ -54,6 +51,7 @@ option2.addEventListener('click', ()=> {
 })
 
 btContinuar.addEventListener('click', ()=>{
+    event.preventDefault();
     chose = 2
     changeOption()
     content2.classList.add("content-Two");
